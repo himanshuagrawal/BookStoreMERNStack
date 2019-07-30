@@ -10,12 +10,30 @@ class userCollection {
                     req.session.user = result[0];
                     req.session.login = true;
                     res.cookie('userId', result[0]._id.toString());
-                    res.send(true);
+                    res.send({
+                        auth:true,
+                        user:req.session.user
+                    });
                 } else {
-                    res.send(false);
+                    res.send({
+                        auth:false
+                    });
                 }
             })
     };
+    getInitialUserStatus(req,res){
+        //console.log(req.session);
+        if(!req.session.login){
+            res.send({
+                auth:false
+            })
+        }else{
+            res.send({
+                auth:true,
+                user:req.session.user
+            })
+        }
+    }
 
     getUserByName(res, obj) {
         user.find({ 'preferredLoginName': obj.preferredLoginName })

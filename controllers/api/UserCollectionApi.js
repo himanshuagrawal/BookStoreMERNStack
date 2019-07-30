@@ -16,6 +16,10 @@ router.get('/authenticateuser', function (request, response) {
     users.authenticateUser(request, response);
 });
 
+router.get('/getInitialUserStatus',function(request,response){
+    users.getInitialUserStatus(request,response);
+})
+
 router.get('/checkpreferredusername', function (request, response) {
     users.checkPreferredUserName(response, request.query.name);
 });
@@ -85,6 +89,14 @@ router.get('/getOrderStatus',function(request,response){
     users.getOrderStatus(response,request.query.userId,request.query.orderId);
 })
 
+router.get('/logout', function (request, response) {
+    request.session.destroy();
+    response.clearCookie('userId');
+    response.send({
+        auth:false,
+        user:{}
+    })
+});
 
 //decrease the number of book count
 
