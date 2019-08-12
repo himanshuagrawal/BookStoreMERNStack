@@ -1,0 +1,154 @@
+
+/*Books pdp body Styling*/
+.book-pdp{
+    background-color: #dfe5e6;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+/* Books details styling*/
+.book-details{
+    padding-bottom: 30px;
+}
+.book-details-img-section{
+    padding-right: 0px;
+    padding-left: 10px;
+}
+.book-details-description-section{
+    padding-left: 0px;
+}
+.book-details-img{
+    height: 240px;
+}
+.book-details-title{
+    font-size: 28px;
+}
+.book-details-author{
+    font-size: 18px;
+}
+.book-details-review{
+    padding-bottom: 8px;
+}
+.book-details-review-rating{
+    font-size: 12px;
+    color: #1d1d1d;
+}
+.book-details-review-comment{
+    font-size: 12px;
+    color: #de2728;
+    text-decoration: underline;
+}
+.book-details-review-comment:hover{
+    cursor: pointer;
+}
+.book-details-page-count{
+    font-size: 14px;
+}
+.book-details-options-wishlist{
+    font-size: 12px;
+    color: #de2728;
+    text-decoration: underline;
+}
+.options-symbol{
+    color: #de2728;
+     font-size: 18px;
+     font-weight: 700;
+}
+#optionsSeparator{
+    padding: 10px;
+}
+.book-details-options-writereview{
+    font-size: 12px;
+    color: #de2728;
+    text-decoration: underline;
+}
+.book-details-options-wishlist:hover, .book-details-options-writereview:hover{
+cursor: pointer;
+}
+
+
+/* Description*/
+
+.book-description{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cacfd0;
+    margin-bottom: 30px;
+}
+.book-description-heading{
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.book-description-content{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+/* Comments Styling */
+.book-comments{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #cacfd0;
+    margin-bottom: 30px;
+}
+.book-comments-heading{
+    font-size: 22px;
+    margin-bottom: 0px;
+    display: inline-block;
+    padding-right:20px; 
+}
+.book-comments-readall{
+    font-size: 12px;
+    color: #de2728;
+    text-decoration: underline;
+}
+.book-comments-readall:hover{
+    cursor: pointer;
+}
+.book-comments-commentlist-comment{
+    padding-top: 20px;
+}
+.book-comment-username{
+    font-size: 16px;
+    display: inline-block;
+    padding-right:20px;
+}
+.book-comment-rating{
+    display: inline-block;
+    padding-right: 20px;
+}
+.book-comment-date{
+    font-size: 14px;
+    display: inline-block;
+}
+.book-comment-content{
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+/* button below card styling*/
+.book-price-cart-buy{
+    margin-top: 25px;
+    background-color: #21addd;
+    width: 32%;
+}
+.book-price-cart-buy:hover{
+cursor: pointer;
+}
+.book-price-tag{
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 8px 20px;
+    display: inline-block;
+}
+.book-cart-btn{
+    background-color: #1a8ab0;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 9px 10px;
+    float: right;
+}
+
