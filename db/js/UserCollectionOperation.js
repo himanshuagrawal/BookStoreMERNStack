@@ -22,15 +22,17 @@ class userCollection {
             })
     };
     getInitialUserStatus(req,res){
-        //console.log(req.session);
         if(!req.session.login){
             res.send({
                 auth:false
             })
         }else{
-            res.send({
-                auth:true,
-                user:req.session.user
+            user.find({'preferredLoginName': req.session.user.preferredLoginName })
+            .then((data)=>{
+                res.send({
+                    auth:true,
+                    user:data[0]
+                })
             })
         }
     }
