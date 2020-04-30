@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
     "express-session": "^1.16.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mongoose": "^5.5.8",
     "query-string": "^6.5.0",
     "request": "^2.88.0"
